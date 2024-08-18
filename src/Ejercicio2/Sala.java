@@ -9,7 +9,7 @@ public class Sala {
     private ArrayList<ArrayList<Asiento>> listaAsientos;
 
     public Sala() {
-        this.numero = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de la sala:"));
+        this.numero = obtenerNumero();
         int filas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de filas:"));
         int columnas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de columnas:"));
         this.capacidad = filas * columnas;

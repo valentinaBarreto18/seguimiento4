@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
     public class Cliente extends Persona {
-        ArrayList<String> HistorialReservas= new ArrayList<String>();
+        ArrayList<String> HistorialReservas = new ArrayList<String>();
 
         public Cliente(String nombre, String identificacion, String direccion){
             super(nombre, identificacion, direccion);
@@ -20,6 +20,6 @@ import java.util.ArrayList;
         }
     public void mostrarDatos() {
     super.mostrarinfo();
-    JOptionPane.showMessageDialog(null, "Historial de Reservas: " +HistorialReservas.toString());
+    JOptionPane.showMessageDialog(null, "Historial de Reservas: " + HistorialReservas.toString());
 }
     }

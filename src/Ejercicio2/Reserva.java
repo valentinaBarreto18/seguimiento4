@@ -8,14 +8,12 @@ public class Reserva {
     private Funcion funcion;
     private ArrayList<Asiento> listaAsientos;
 
-    public Reserva(Cliente cliente, Funcion funcion, ArrayList<Asiento> listaAsientos) {
+    public Reserva(Cliente cliente, Funcion funcion) {
         this.cliente = cliente;
         this.funcion = funcion;
-        this.listaAsientos = listaAsientos;
+        this.listaAsientos = new ArrayList<>();
     }
 
-    public Reserva(Cliente cliente, Funcion funcion) {
-    }
 
     public Cliente obtenerCliente() {
         return cliente;
